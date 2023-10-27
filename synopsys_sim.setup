@@ -1,0 +1,6 @@
+WORK > DEFAULT
+DEFAULT : ./work
+MY_LIB : ./MY_LIB
+UTIL_LIB : ./UTIL_LIB
+accellera_ovl_vhdl : ./ACCELLERA_OVL_VHDL_LIB
+ACCELLERA_OVL_VHDL > accellera_ovl_vhdl
