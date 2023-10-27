@@ -13,4 +13,6 @@ It is full-duplex synchronised interface usually used in embedded systems for da
 -> done : Triggered on transfer completion.<br>
 -> Dout : output port to collect data<br>
 
-**[design_code](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/design.sv)**
+_Click here for_
+**[design_code](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/design.sv)**<br>
+**[Testbench_code](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/testbench.sv)**
