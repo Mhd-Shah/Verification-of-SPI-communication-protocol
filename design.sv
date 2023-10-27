@@ -10,7 +10,7 @@ output reg sclk,cs,mosi
   int countc = 0;
   int count = 0;
  
-  /////////////////////////generation of sclk
+  // generation of synchronised clk
  always@(posedge clk)
   begin
     if(rst == 1'b1) begin
@@ -28,7 +28,6 @@ output reg sclk,cs,mosi
     end
   end
   
-  //////////////////state machine
     reg [11:0] temp;
     
     
@@ -76,7 +75,6 @@ output reg sclk,cs,mosi
  end
   
 endmodule
-///////////////////////////
  
 module spi_slave (
 input sclk, cs, mosi,
@@ -114,19 +112,15 @@ if(count <= 11)
  count <= 0;
  done <= 1'b1;
  state <= detect_start;
- end
- 
+ end 
 end
- 
 endcase
 end
 assign dout = temp;
  
 endmodule
  
- 
- 
-/////////////////////////////// 
+ // synchronising master-slave operations
 module top (
 input clk, rst, newd,
 input [11:0] din,
@@ -139,9 +133,9 @@ wire sclk, cs, mosi;
 spi_master m1 (clk, newd, rst, din, sclk, cs, mosi);
 spi_slave s1  (sclk, cs, mosi, dout, done);
   
- 
 endmodule
 
+//spi interfaca
 interface spi_if;
   
   logic clk,newd,rst,sclk,cs,mosi;
