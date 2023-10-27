@@ -1,4 +1,4 @@
-It is full-duplex synchronised interface usually used in embedded systems for data transfer. SPI has master or controller and slave or chip to which data is to be transfered. Refer the [master](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/SPI_Slave.png) and [slave](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/SPI_Slave.png) images for better understanding<br>
+It is full-duplex synchronised interface usually used in embedded systems for data transfer. SPI has master or controller and slave or chip to which data is to be transfered. Refer the [master](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/SPI_Master.png) and [slave](https://github.com/Mhd-Shah/Verification-of-SPI-communication-protocol/blob/main/SPI_Slave.png) images for better understanding<br>
 
 **__________SPI Master ______________**<br>
 -> newd : When there is new data, it is turned to active high.<br>
